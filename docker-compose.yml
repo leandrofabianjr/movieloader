@@ -1,0 +1,9 @@
+version: '3'
+services:
+  movieloader:
+    build: ./docker
+    image: movieloader
+    ports:
+      - "88:80"
+    volumes:
+      - .:/var/www/html
