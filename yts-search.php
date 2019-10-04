@@ -1,7 +1,7 @@
 <?php include 'template-header.php' ?>
 
 <section>
-    <form method="post" action="search-title.php">
+    <form method="post" action="search">
         <div class="form-group">
             <label for="title"></label>
             <input type="text" class="form-control" id="title" aria-describedby="title"
