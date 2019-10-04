@@ -3,7 +3,10 @@ services:
   movieloader:
     build: ./docker
     image: movieloader
+    container_name: movieloader
     ports:
       - "88:80"
     volumes:
       - .:/var/www/html
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal
